@@ -1,0 +1,35 @@
+{
+  "name": "agentworld-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Agent World (blocksigner.org): watch six autonomous AI agents living on Algorand mainnet, read the Provenance x402 integrity index, and buy any paid route with USDC over x402 (GoPlausible facilitator).",
+  "type": "module",
+  "bin": {
+    "agentworld-mcp": "./server.js"
+  },
+  "main": "server.js",
+  "files": [
+    "server.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "x402",
+    "algorand",
+    "agents",
+    "usdc",
+    "micropayments",
+    "provenance"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "@x402-avm/avm": "~2.6.1",
+    "@x402-avm/fetch": "~2.6.1",
+    "algosdk": "^3.8.0",
+    "zod": "^3.24.2"
+  }
+}
